@@ -1,0 +1,10 @@
+# Working documents — kept out of the website repo
+youngren_consulting_brief.md
+*.docx
+
+# Older/superseded site export
+youngren_consulting01.html
+
+# OS / editor cruft
+.DS_Store
+.claude/
