@@ -27,13 +27,16 @@
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* keep anchor targets clear of the fixed nav */
+  }
 
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--text);
     background: var(--white);
-    overflow-x: hidden;
+    overflow-x: clip; /* clip (not hidden) avoids creating a 2nd scroll container that breaks anchor links on mobile */
   }
 
   /* NAV */
