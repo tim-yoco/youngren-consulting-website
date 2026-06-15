@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');</script>
 <title>Youngren Consulting — AI & Data Readiness</title>
 <meta name="description" content="Independent AI and data readiness consulting for mid-market companies. Fixed-scope assessments that show you why your AI isn't delivering — and what to do about it. Chicago-based, available nationally.">
 <meta property="og:title" content="Youngren Consulting — AI & Data Readiness">
@@ -690,12 +691,18 @@
 
   /* Scroll reveal */
   .reveal {
-    opacity: 0;
-    transform: translateY(24px);
     transition: opacity 0.7s ease, transform 0.7s ease;
   }
 
-  .reveal.visible {
+  /* Only hide blocks pre-reveal when JavaScript is actually running to
+     animate them back in. Without JS (e.g. the file opened directly from
+     the iOS Files app), content stays fully visible instead of blank. */
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  .js .reveal.visible {
     opacity: 1;
     transform: translateY(0);
   }
