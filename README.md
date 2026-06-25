@@ -1,6 +1,6 @@
 # Youngren Consulting — Website
 
-Single-page marketing site for Youngren Consulting, LLC — AI & data readiness consulting for mid-market companies.
+Single-page marketing site for Youngren Consulting, LLC — AI & data readiness consulting.
 
 **Live at https://youngrenconsulting.com**
 
